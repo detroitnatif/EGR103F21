@@ -1,0 +1,99 @@
+%% Be sure to check spelling!
+
+%% Put your name and the proper due date in place
+
+%% Copy the lstinputlisting and figure code as many times as you need
+%% Be sure to put in your own file names if appropriate
+
+%% Note that the \includegraphics and \lstinputlisting commands
+%% are currently commented out with %%% - until the
+%% files exist, processing this code without them will result in an error
+%% so leave the comments until you have created the files!
+
+\documentclass{article}
+\usepackage{amsmath}    % loads AMS-Math package
+\usepackage{graphicx}   % allows image files
+\usepackage{listings}   % allows lstlisting environment
+\usepackage[letterpaper, margin=0.75in]{geometry}  % set paper size/margins
+\usepackage{EGR103style}% colorful file imports
+
+\begin{document}
+\begin{center}
+\rule{6.5in}{0.5mm}\\~\\
+\textbf{\large EGR 103L -- Fall 2021}\\~\\
+\textbf{\huge Laboratory 7 - Linear Algebra}\\~\\
+***NAME (NetID)***\\
+***Lab Section N, DAY TIMES***\\
+***DATE DUE***\\~\\
+{\small I understand and have adhered to all the tenets of the Duke Community Standard in completing every part of this assignment.  I understand that a violation of any part of the Standard on any part of this assignment can result in failure of this assignment, failure of this course, and/or suspension from Duke University.} 
+\rule{6.5in}{0.5mm}\\
+\end{center}
+\tableofcontents
+\listoffigures
+\pagebreak
+
+\section{Chapra Problem 8.16}
+The scripts and plot are in the appendices.
+
+\section{Parameter Sweep 1}
+%% Discuss relationship between i and v
+
+\section{Parameter Sweep 2}
+%% Discuss relationship between i and R
+%% Discuss relationship between log10(cond) and R
+
+\pagebreak
+\appendix
+\section{Codes and Output}
+% Put the name of your file in the subsection name 
+% and the lstinputlisting input
+% Be sure to include the community standard in codes!
+% Add \pagebreaks if they make sense
+% Make as many copies as you need
+
+\lstset{style=python103, language=python}
+
+\subsection{Chapra 8.16}
+%%%\lstinputlisting{chapra_08_16.py}
+
+\subsection{Creative}
+%%%\lstinputlisting{creative_chapra_08_16.py}
+
+\subsection{Sweep 1}
+%%%\lstinputlisting{sweep_1.py}
+
+\subsection{Sweep 2}
+%%%\lstinputlisting{sweep_2.py}
+
+\pagebreak
+\section{Figures}
+
+\begin{figure}[htb!]
+\begin{center}
+%%%\includegraphics[scale=0.7]{FILE.png}
+\caption{Creative Rotated Shape}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+%%%\includegraphics[scale=0.7]{FILE.png}
+\caption{Current vs. Voltage}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+%%%\includegraphics[scale=0.7]{FILE.png}
+\caption{Current vs. Resistance}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+%%%\includegraphics[scale=0.7]{FILE.png}
+\caption{Condition Number vs. Resistance}
+\end{center}
+\end{figure}
+
+\end{document}

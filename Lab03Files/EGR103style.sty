@@ -1,0 +1,82 @@
+%% This collection is to import code in color
+% Adapted from https://www.sharelatex.com/learn/Code_listing
+% Colors from Spyder IDE ``Spyder''
+% Spyder comment and string color modified to be darker
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{EGR103style}[2021/08/01 version]
+\RequirePackage[dvipsnames]{xcolor}
+
+% Default and optional Python colors
+\definecolor{pbgcolor}{HTML}{FFFFFF}
+\definecolor{pcscolor}{HTML}{3D6D3D}
+\definecolor{pkwcolor}{HTML}{0000FF}
+\definecolor{plncolor}{HTML}{000000}
+\definecolor{pstcolor}{HTML}{007000}
+\definecolor{pntcolor}{HTML}{000000}
+\definecolor{pnumcolor}{HTML}{800000}
+
+\DeclareOption{bw}{ 
+\definecolor{pbgcolor}{HTML}{FFFFFF}
+\definecolor{pcscolor}{HTML}{000000}
+\definecolor{pkwcolor}{HTML}{000000}
+\definecolor{plncolor}{HTML}{000000}
+\definecolor{pstcolor}{HTML}{000000}
+\definecolor{pntcolor}{HTML}{000000}
+\definecolor{pnumcolor}{HTML}{000000}
+}
+\DeclareOption*{\PackageWarning{examplepackage}{Unknown ‘\CurrentOption’}}
+\ProcessOptions\relax
+
+% Style definitions
+% Switch using \lstset{style=NAME} before lstlsting or lstinputlisting
+\lstdefinestyle{none}{    
+    backgroundcolor=,   
+    commentstyle=\color{black},
+    keywordstyle=\color{black},
+    numberstyle=\color{black},
+    stringstyle=\color{black},
+    basicstyle=\color{black},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=none,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+}
+
+\lstdefinestyle{python103}{
+    backgroundcolor=\color{pbgcolor},   
+    commentstyle=\itshape\color{pcscolor},
+    keywordstyle=\bfseries\color{pkwcolor},
+    numberstyle=\color{plncolor},
+    stringstyle=\color{pstcolor},
+    basicstyle=\color{pntcolor},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    stepnumber=1,    
+    firstnumber=1,
+    numberfirstline=true,
+    literate=%
+   *{0}{{{\color{pnumcolor}0}}}1
+    {1}{{{\color{pnumcolor}1}}}1
+    {2}{{{\color{pnumcolor}2}}}1
+    {3}{{{\color{pnumcolor}3}}}1
+    {4}{{{\color{pnumcolor}4}}}1
+    {5}{{{\color{pnumcolor}5}}}1
+    {6}{{{\color{pnumcolor}6}}}1
+    {7}{{{\color{pnumcolor}7}}}1
+    {8}{{{\color{pnumcolor}8}}}1
+    {9}{{{\color{pnumcolor}9}}}1
+}

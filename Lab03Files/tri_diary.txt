@@ -1,0 +1,5 @@
+Running tests for user tk206
+Test 1: runs: triangles( 4,  9,  8) returns (4.605e-01, 1.586e+00, 1.095e+00)
+Test 2: runs: triangles( 2,  8,  8) returns (2.507e-01, 1.445e+00, 1.445e+00)
+Test 3: runs: triangles( 6,  6,  4) returns (1.231e+00, 1.231e+00, 6.797e-01)
+Test 4: runs: triangles(10,  3, 10) returns (1.420e+00, 3.011e-01, 1.420e+00)

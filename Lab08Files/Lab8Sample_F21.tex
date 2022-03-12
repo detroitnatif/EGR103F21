@@ -1,0 +1,117 @@
+%% Be sure to check spelling!
+
+%% Put your name and the proper due date in place
+
+%% Copy the lstinputlisting and figure code as many times as you need
+%% Be sure to put in your own file names if appropriate
+
+%% Note that the \includegraphics and \lstinputlisting commands 
+%% are currently commented out with %%% - until the
+%% files exist, processing this code without them will result in an error
+%% so leave the comments until you have created the files!
+
+%%% Items starting with %%% are actionable items
+
+\documentclass{article}
+\usepackage{amsmath}    % loads AMS-Math package
+\usepackage{graphicx}   % allows image files
+\usepackage{listings}   % allows lstlisting environment
+\usepackage[letterpaper, margin=0.5in]{geometry}  % set paper size/margins
+\usepackage{EGR103style}  % colorful file imports
+
+\begin{document}
+\begin{center}
+\rule{6.5in}{0.5mm}\\~\\
+\textbf{\large EGR 103L -- Fall 2021}\\~\\
+\textbf{\huge Laboratory 8 - Surfaces}\\~\\
+***NAME (NetID)***\\
+***Lab Section N, DAY TIMES***\\
+***DATE DUE***\\~\\
+{\small I understand and have adhered to all the tenets of the Duke Community Standard in completing every part of this assignment.  I understand that a violation of any part of the Standard on any part of this assignment can result in failure of this assignment, failure of this course, and/or suspension from Duke University.} 
+\rule{6.5in}{0.5mm}\\
+\end{center}
+\tableofcontents
+\listoffigures
+\renewcommand{\arraystretch}{1.5}
+\clearpage
+
+\section{Chapra 2.22}
+%%%Discussion
+
+\section{Chapra 3.9}
+%%%Discussion
+
+\section{Chapra 15.5}
+%%%Discussion
+
+\section{Sphere}
+Transformation equations:
+\begin{align*}
+x&=...\\
+y&=...\\
+z&=...
+\end{align*}
+\pagebreak
+
+\appendix
+\section{Codes}
+% Put the name of your file in the subsection name 
+% and the lstinputlisting - note that _ need to be \_ in 
+% subsection name but not in lstinpustlisting name!
+
+% Be sure to include the community standard in codes!
+
+% Add \pagebreaks if they make sense
+
+% Set default to python
+\lstset{style=python103, language=python} 
+
+\subsection{Chapra 2.22}
+%%%\lstinputlisting{chapra_02_22.py}
+\pagebreak
+
+\subsection{Chapra 3.9}
+%%%\lstinputlisting{chapra_03_09.py}
+\pagebreak
+
+\subsection{Chapra 15.5}
+%%%\lstinputlisting{chapra_15_5.py}
+\pagebreak
+
+\subsection{Sphere}
+%%%\lstinputlisting{graph_sphere.py} 
+
+\clearpage % start Figures on new page
+
+\section{Figures}
+% Remove %%% when ready; use your file names if different from mine
+
+\begin{figure}[ht!]
+\begin{center}
+%%%\includegraphics{chapra_02_22_plot.png}
+\caption{Figure for Chapra 2.22}
+\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+%%%\includegraphics{chapra_03_09_plot.png}
+\caption{Figure for Chapra 3.9}
+\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+%%%\includegraphics{chapra_15_05_plot.png}
+\caption{Figure for Chapra 15.5}
+\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+%%%\includegraphics{sphere_plot.png}
+\caption{Figure for Sphere}
+\end{center}
+\end{figure}
+
+\end{document}

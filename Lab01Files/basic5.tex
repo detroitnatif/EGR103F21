@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{amsmath}    % loads AMS-Math package
+\usepackage{graphicx}   % bring in graphics
+\usepackage{listings}   % allows lstlisting environment
+\usepackage[letterpaper, margin=0.5in]{geometry}  % set paper size/margins
+\usepackage{EGR103style}
+
+\begin{document}
+Hello! $e=mc^2$
+\begin{align}
+c&=\sqrt{a^2+b^2}
+\end{align}
+\begin{center}
+\includegraphics[angle=-90, width=4in]{drawing.eps}
+\end{center}
+\pagebreak
+
+\lstinputlisting{basic4.tex}
+\lstinputlisting[language={[LaTeX]TeX}]{basic4.tex}
+\lstset{style=python103}
+\lstinputlisting{basic4.tex}
+\lstinputlisting[language={[LaTeX]TeX}]{basic4.tex}
+\end{document}
